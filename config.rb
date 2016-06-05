@@ -19,6 +19,7 @@ set :index_file, "index.html"
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.build_before = true
+  deploy.deploy.branch = "master"
 end
 
 activate :directory_indexes
