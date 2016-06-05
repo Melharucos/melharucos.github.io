@@ -1,0 +1,62 @@
+@keyframes onload {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    35% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    82.5% {
+        transform: scale(1.02);
+        animation-timing-function: ease-out;
+        opacity: 0.85;
+    }
+    
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes open {
+    from {
+        height: 0;
+    }
+    
+    35% {
+        height: 0;
+    }
+    
+    82.5% {
+        animation-timing-function: ease-out;
+        height: 480px;
+    }
+    
+    to {
+        opacity: 1;
+        height: 720px;
+    }
+}
+
+@keyframes openmobile {
+    from {
+        height: 0;
+    }
+    
+    35% {
+        height: 0;
+    }
+    
+    82.5% {
+        animation-timing-function: ease-out;
+        height: 160px;
+    }
+    
+    to {
+        opacity: 1;
+        height: 320px;
+    }
+}
