@@ -6,7 +6,13 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <title><%= current_page.data.title || "404" %></title>
-
+    <meta name="description" content="<%= current_page.data.description %>">
+    <meta property="og:title" content="<%= current_page.data.title %>">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="<%= current_page.data.description %>">
+    <% if current_page.data.image %>
+        <meta property="og:image" content="<%= current_page.data.image %>">
+    <% end %>
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag :"font-awesome" %> 
     <%= stylesheet_link_tag :site %>
